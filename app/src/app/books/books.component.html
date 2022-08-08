@@ -1,0 +1,11 @@
+<div class="books">
+  <app-book *ngFor="let book of  books | searchByString: searchByString | orderBy: sortingRequired"
+                 [book]="book"
+                 (needDeleteBook)="deleteBook($event)"
+  >
+  </app-book>
+<!--  <app-no-data *ngIf="(books | searchByString: searchByString).length === 0"></app-no-data>-->
+<!--  <app-new-book (stopAddingBook)="hideModal()" (addBook)="addBook($event)" *ngIf='showModal'></app-new-book>-->
+<!--  <app-search (filterValue)="search($event)" (orderByDate)="sort()"></app-search>-->
+  <button (click)="getModal()" class="btn">Add book</button>
+</div>

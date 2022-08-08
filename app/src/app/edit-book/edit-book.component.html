@@ -1,0 +1,18 @@
+<h1>{{book.name}}</h1>
+<div class="rectangle">
+  <h1 class="new-book">Edit book</h1>
+  <label for="title">
+    Name:
+  </label>
+  <br>
+  <input [(ngModel)]="book.name" type="text" id="name" name="title" class="form-elements"/>
+  <label for="author">
+    Author:
+  </label>
+  <br>
+  <input [(ngModel)]="book.author" type="text" id="author" name="title" class="form-elements"/>
+  <button (click)="save()">Save</button>
+  <button (click)="cancel()">Cancel</button>
+</div>
+
+
