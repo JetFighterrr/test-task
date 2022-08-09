@@ -6,6 +6,8 @@ with ability to create - read - update - delete.
 Logic is pretty basic: read a list of books(any user), edit, add book to the list(editor functionality), delete(owner functionality). 
 Also search by name and sort are available.
 
+![Snapshot](https://github.com/JetFighterrr/test-task/blob/main/books.png)
+
 # App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
