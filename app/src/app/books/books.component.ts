@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {DataService} from "../data.service";
-import {Book} from "../book";
-import {AuthService} from "../auth.service";
+import {DataService} from "../services/data.service";
+import {Book} from "../model/book";
+import {AuthService} from "../services/auth.service";
 import {AddBookComponent} from "../add-book/add-book.component";
 
 @Component({
