@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
-import {Book} from "../book";
-import {AuthService} from "../auth.service";
+import {Book} from "../model/book";
+import {AuthService} from "../services/auth.service";
 
 @Component({
   selector: 'app-book',

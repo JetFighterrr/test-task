@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Book} from "../book";
-import {DataService} from "../data.service";
+import {Book} from "../model/book";
+import {DataService} from "../services/data.service";
 import { ActivatedRoute} from '@angular/router';
 import {Router} from "@angular/router";
 import {NgModel} from "@angular/forms";

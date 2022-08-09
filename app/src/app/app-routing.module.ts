@@ -6,11 +6,10 @@ import {LoginScreenComponent} from "./login-screen/login-screen.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 
 export const routes: Routes = [
-  {path: "", redirectTo: "books", pathMatch: "full"},
-
+  {path: "", redirectTo: "login", pathMatch: "full"},
+  {path: "login", component: LoginScreenComponent},
   {path: "books", component: BooksComponent},
   {path: "books/:id", component: EditBookComponent},
-  {path: "login", component: LoginScreenComponent},
   {path: "**", component: NotFoundComponent},
 ];
 
