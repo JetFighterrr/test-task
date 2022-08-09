@@ -1,10 +1,11 @@
+<script src="../add-book/add-book.component.spec.ts"></script>
 <div class="rectangle">
   <span> Name: {{book.name | uppercase}} </span>
   <br>
   <span> Author: {{book.author}} </span>
   <br>
-  <button class="btn">
-    <a [routerLink]="['/books', book.id]" class="btn">Edit</a>
+  <button class="btn" [routerLink]="['/books', book.id]" [disabled]="!canEdit">
+      Edit
   </button>
-  <button (click)="deleteBook()" class="btn">Delete</button>
+  <button (click)="deleteBook()" class="btn" [disabled]="!canDelete">Delete</button>
 </div>

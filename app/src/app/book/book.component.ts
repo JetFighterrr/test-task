@@ -1,5 +1,6 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
 import {Book} from "../book";
+import {AuthService} from "../auth.service";
 
 @Component({
   selector: 'app-book',
@@ -14,9 +15,17 @@ export class BookComponent {
     id: 0,
   }
 
+  canEdit = false;
+  canDelete = false;
+
   @Output() needDeleteBook = new EventEmitter<number>();
 
   constructor() { }
+
+  ngOnInit() {
+    this.canEdit = AuthService.canEdit;
+    this.canDelete = AuthService.canDelete;
+  }
 
   deleteBook() {
     if (window.confirm("Do you really want to delete this book?")) {

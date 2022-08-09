@@ -6,11 +6,13 @@
   </label>
   <br>
   <input [(ngModel)]="book.name" type="text" id="name" name="title" class="form-elements"/>
+  <br>
   <label for="author">
     Author:
   </label>
   <br>
   <input [(ngModel)]="book.author" type="text" id="author" name="title" class="form-elements"/>
+  <br>
   <button (click)="save()">Save</button>
   <button (click)="cancel()">Cancel</button>
 </div>

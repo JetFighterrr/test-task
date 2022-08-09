@@ -1,1 +1,19 @@
-<p>add-book works!</p>
+<div class="rectangle">
+  <h1 class="new-book">New book</h1>
+  <label for="name">
+    Name:
+  </label>
+  <br>
+  <input [(ngModel)]="book.name" type="text" id="name" name="name" class="form-elements"/>
+  <br>
+  <label for="author">
+    Author:
+  </label>
+  <br>
+  <input [(ngModel)]="book.author" type="text" id="author" name="author" class="form-elements"/>
+
+  <br>
+  <button (click)="save()" [disabled]="!canEdit">Save</button>
+  <button (click)="cancel()">Cancel</button>
+</div>
+

@@ -13,6 +13,9 @@ import { SearchByStringPipe } from './search-by-string.pipe';
 import { AddBookComponent } from './add-book/add-book.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import {FormsModule} from "@angular/forms";
+import { NotFoundComponent } from './not-found/not-found.component';
+import { NoDataComponent } from './no-data/no-data.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import {FormsModule} from "@angular/forms";
     OrderByPipe,
     SearchByStringPipe,
     AddBookComponent,
-    EditBookComponent
+    EditBookComponent,
+    NotFoundComponent,
+    NoDataComponent,
+    SearchComponent
   ],
     imports: [
         BrowserModule,

@@ -4,8 +4,8 @@
                  (needDeleteBook)="deleteBook($event)"
   >
   </app-book>
-<!--  <app-no-data *ngIf="(books | searchByString: searchByString).length === 0"></app-no-data>-->
-<!--  <app-new-book (stopAddingBook)="hideModal()" (addBook)="addBook($event)" *ngIf='showModal'></app-new-book>-->
-<!--  <app-search (filterValue)="search($event)" (orderByDate)="sort()"></app-search>-->
-  <button (click)="getModal()" class="btn">Add book</button>
+  <app-no-data *ngIf="(books | searchByString: searchByString).length === 0"></app-no-data>
+  <app-add-book (stopAddingBook)="hideModal()" (addBook)="addBook($event)" *ngIf='showModal'></app-add-book>
+  <app-search (filterValue)="search($event)" (orderBy)="sort()"></app-search>
+  <button (click)="getModal()" class="btn" [disabled]="!canEdit" >Add book</button>
 </div>

@@ -1,1 +1,9 @@
-<p>login-screen works!</p>
+<div class="general">
+  <div class="rectangle">
+    <p class="email">Email</p>
+    <input class="content" type="email" [(ngModel)]="email" required/>
+    <p class="email">Password</p>
+    <input class="content" type="password" [(ngModel)]="password" required/>
+    <button class="btn-bg" (click)="login()">Login</button>
+  </div>
+</div>
