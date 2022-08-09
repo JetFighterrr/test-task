@@ -1,7 +1,10 @@
 # test-task
 
 This is demo project of Angular app with listing of books(name - author),
-with ability to create - read - update - delete 
+with ability to create - read - update - delete.
+
+Logic is pretty basic: read a list of books(any user), edit, add book to the list(editor functionality), delete(owner functionality). 
+Also search by name and sort are available.
 
 # App
 
